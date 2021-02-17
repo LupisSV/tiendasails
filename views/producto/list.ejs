@@ -1,0 +1,29 @@
+<section>
+	<h1>Listado de productos</h1>
+	<p align="center">A continuación te presentamos toda la lista de nuestros productos que puedes comprar, no olvides todos nuestros productos son de calidad</p>	
+</section>
+<section>
+	<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th colspan="4">Tabla productos</th>
+		</tr>
+		<tr>
+			<th>Código</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+			<th>Precio</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% producto.forEach(function(producto){ %>	
+			<tr>
+				<td><%= producto.codigo %></td>
+				<td><%= producto.nombre %></td>
+				<td><%= producto.descripcion %></td>
+				<td><%= producto.precio %></td>
+			</tr>
+		<% }) %>
+	</tbody>
+</table>
+</section>
